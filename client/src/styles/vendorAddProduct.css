@@ -69,9 +69,10 @@
     height: 50px; /* Set a fixed height for buttons */
     background-color: #e0f8ff;
     color: black;
-    font-size: 13px;
+    font-size: 11px;
     border: none;
-    padding: 5px 10px;
+    font-weight:400;
+    padding: 10px 10px;
     cursor: pointer;
   }
   

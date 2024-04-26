@@ -7,18 +7,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const VendorAddProduct = () => {
   const navigate = useNavigate();
-  const vendor_id = localStorage.getItem("user_id");
+  const vendor_id = localStorage.getItem('user_id') || '662b6112b4d86cdbdf0e50bc';
   const user_name = localStorage.getItem("user_name");
 
   const userType = localStorage.getItem("user_type");
 
-  if (!userType) {
-    alert("User not logged in");
-    navigate("/");
-  } else if (userType !== "Vendor") {
-    alert("You are not a vendor!");
-    navigate("/");
-  }
+
 
   const [product, setProduct] = useState({
     name: "",
@@ -131,7 +125,7 @@ const VendorAddProduct = () => {
             &times;
           </button>
           <div className="category-container">
-            {["Stationary", "Books", "Watch", "Appliances", "Laptop", "Gaming", "Food", "Electronics", "Mobile", "Kitchen Item", "Misc", "Shirts", "Pants", "Bags", "Clothes"].map(category => (
+            {["Mobile Phones", "Laptops and Computers", "Tech Accessories", "Fashion", "Home and Decor", "Beauty and Health", "Books", "Toys and Games", "Sports and Outdoors", "Food and Grocery"].map(category => (
               <button
                 key={category}
                 onClick={() => handleCategoryClick(category)}

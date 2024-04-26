@@ -21,25 +21,25 @@ const VendorHome = () => {
   const [errorMessage, setErrorMessage] = useState(null);
 
   useEffect(() => {
-    const checkAuthorization = () => {
-      const userType = localStorage.getItem('user_type');
-      if (!userType) {
-        setErrorMessage('User not logged in');
-        navigate('/');
-        return false;
-      } else if (userType !== 'Vendor') {
-        setErrorMessage('You are not a vendor!');
-        navigate('/');
-        return false;
-      }
-      return true;
-    };
+    // const checkAuthorization = () => {
+    //   const userType = 'Vendor'
+    //   if (!userType) {
+    //     setErrorMessage('User not logged in');
+    //     navigate('/');
+    //     return false;
+    //   } else if (userType !== 'Vendor') {
+    //     setErrorMessage('You are not a vendor!');
+    //     navigate('/');
+    //     return false;
+    //   }
+    //   return true;
+    
 
     const fetchRecentProducts = async () => {
       try {
-        if (!checkAuthorization()) return;
+        // if (!checkAuthorization()) return;
 
-        const userId = localStorage.getItem('user_id');
+        const userId = localStorage.getItem('user_id') || '662b6112b4d86cdbdf0e50bc';
         if (!userId) {
           throw new Error('User ID not found');
         }
@@ -132,7 +132,7 @@ const VendorHome = () => {
 
         <div className="bg-white w-full">
           <div className="p-4 text-center">
-            <h2 className="text-2xl font-bold mb-2 mt-4 p-4 ">Recent Products Added</h2>
+
             <Slider {...productSettings} className="mx-auto">
               {recentProducts.map(product => (
                 <div className="p-4" key={product.id}>
