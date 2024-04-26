@@ -1,0 +1,27 @@
+.category-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px; /* Adjust the margin as needed */
+  }
+  
+  .category-btn {
+    width: 100px;
+    height: 50px;
+    background-color: #e0f8ff;
+    color: black;
+    font-size: 13px;
+    border-radius: 20px;
+    margin:10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 5px; /* Add margin between category buttons */
+    transition: 0.3s;
+  }
+  
+  .category-btn:hover {
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Add stronger box shadow on hover */
+    transition: 0.3s;
+    background-color: #94dbf7;
+  }

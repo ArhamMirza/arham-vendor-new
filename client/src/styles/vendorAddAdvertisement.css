@@ -1,0 +1,37 @@
+/* vendorAddAdvertisement.css */
+
+.VendorAddAdvertisement {
+    text-align: center;
+    padding-top: 100px;
+   
+  }
+  
+
+  
+  
+  /* vendorAddAdvertisement.css */
+
+  .container button {
+    margin-top: 20px; /* Add margin to the button */
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  
+  #ads-card {
+    background-color: rgb(35, 49, 97);
+    border-radius: 20px; /* Adjust this value as needed */
+    padding: 20px; /* Adjust padding as needed */
+    color: white; /* Text color */
+    /* Adjust other styles as needed */
+    width:510px;
+    margin: 60px auto;
+    margin-bottom: 10px;
+    padding:20px;
+    padding-bottom: 5px;
+    font-size: 15px;
+    word-wrap: break-word;
+    text-align: justify;
+}
+
+  
+  

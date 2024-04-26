@@ -1,0 +1,284 @@
+/* HomePage2.css */
+/* .homepage2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    height:1200px;
+    padding-bottom: 2rem;
+    width: 1300px;;
+    Add some padding at the bottom
+} */
+
+.logo2 {
+    height: 60px;
+    display: block;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to right, #0052D4, #65C7F7, #9CECFB);
+    /* A cool gradient for the navbar */
+    color: white;
+    padding: 1rem 2%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-brand {
+    flex-basis: 20%;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-basis: 50%;
+}
+
+.nav-links li {
+    display: inline-block;
+    /* Inline display of nav items */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    /* Increased padding for larger click areas */
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 4px;
+    /* Rounded corners for links */
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Subtle hover and focus effect */
+}
+
+/* .search-bar {
+    display: flex;
+    justify-content: flex-end;
+    flex-basis: 30%;
+} */
+
+/* .search-bar input {
+    padding: 0.5rem;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    width: 100%;
+} */
+
+.search-bar button {
+    padding: 0.5rem 1rem;
+    background-color: #FFA500;
+    /* A strong call-to-action color for the search button */
+    border: none;
+    cursor: pointer;
+    margin-left: 0.5rem;
+    /* Space between the search input and the button */
+}
+
+.featured-product {
+    position: relative;
+    /* background: url('../assets/featured-bg.jpg') no-repeat center center/cover; */
+    color: white;
+    padding: 3rem 0;
+    /* Padding on top and bottom */
+    margin: 1rem 2%;
+    border-radius: 8px;
+    /* Rounded corners for the featured area */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.featured-product img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    /* Consistency in border radius */
+}
+
+.featured-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    max-width: 600px;
+    padding: 20px;
+    background-color: rgba(235, 28, 28, 0.5);
+    /* Semi-transparent background for text overlay */
+    border-radius: 10px;
+    /* Rounded corners for the overlay */
+}
+
+.featured-text h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.featured-text p {
+    margin-bottom: 1rem;
+}
+
+.featured-text button {
+    background-color: #FFA500;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out;
+}
+
+.featured-text button:hover {
+    transform: scale(1.05);
+    /* Slight scale on hover for interactivity */
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+}
+
+/* .product-card {
+    /* Existing styles for box shadow and transform */
+    /* background: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-height: 500px;
+    width: 100%;
+
+    transition: box-shadow 0.3s ease, transform 0.3s ease; */
+/* } */ 
+.product-card {
+    background: white;
+    border-radius: 4px;
+    overflow: hidden; /* This ensures that the image does not bleed outside the border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex; /* Use flexbox for centering */
+    align-items: center; /* Aligns children (img) vertically */
+    justify-content: center; /* Aligns children (img) horizontally */
+    height: 100%; /* Full height of the card */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.product-card img {
+    max-width: 50%; /* Max-width to contain the image within the card */
+    max-height: 100%; /* Max-height to contain the image within the card */
+    object-fit: contain; /* Ensures the image is scaled properly */
+}
+
+
+.product-card:hover {
+    /* More pronounced shadow on hover for interactive feel */
+    transform: translateY(-20px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Product info styles */
+.product-info {
+    padding: 3rem;
+    text-align: center;
+    /* Center text for a cleaner look */
+}
+
+.product-info h3 {
+    font-size: 1.1rem;
+    /* Slightly larger font-size for product titles */
+    margin-bottom: 0.5rem;
+    color: #0052D4;
+    /* Styling the title with theme color */
+}
+
+.product-info p {
+    font-size: 0.9rem;
+    /* Smaller font-size for product descriptions */
+    margin-bottom: 1rem;
+}
+
+.product-info button {
+    background-color: #FFA500;
+    /* Call to action button color */
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    /* Rounded edges for buttons */
+    transition: background-color 0.3s ease;
+}
+
+.product-info button:hover {
+    background-color: #cc8400;
+    /* Darker shade on hover for button */
+}
+
+/* Footer styles */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 1rem;
+}
+
+.footer p {
+    margin: 0;
+    /* Remove default margin */
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+
+    .navbar .search-bar,
+    .navbar .nav-links {
+        flex-direction: column;
+    }
+
+    .search-bar input,
+    .search-bar button {
+        width: 100%;
+        /* Full width for mobile devices */
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* Two products per row on tablet sizes */
+    }
+
+    .featured-product,
+    .side-deals,
+    .product-grid {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .featured-product img {
+        height: auto;
+        /* Adjust height for mobile devices */
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+        /* Single product per row on mobile */
+    }
+
+    .nav-brand,
+    .search-bar,
+    .nav-links {
+        width: 100%;
+        /* Stack navbar items on smaller screens */
+        margin-bottom: 0.5rem;
+    }
+}

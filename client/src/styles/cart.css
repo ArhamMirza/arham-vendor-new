@@ -1,0 +1,80 @@
+.cart-page {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .cart-details,
+  .order-summary {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    border-radius: 4px;
+  }
+  
+  .cart-details {
+    max-width: 800px; /* Adjust as per your design */
+  }
+  
+  .saved-items {
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+  }
+  
+  .empty-list {
+    color: #555;
+    margin-top: 20px;
+  }
+  
+  .order-summary {
+    width: 350px; /* Adjust as per your design */
+    margin-left: 20px;
+  }
+  
+  .order-summary h3,
+  .cart-details h2 {
+    margin-bottom: 20px;
+  }
+  
+  .total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #0055cc;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  button:hover {
+    background-color: #0033cc;
+  }
+  
+  .lease-option p {
+    margin-top: 10px;
+    color: #0055cc;
+  }
+  
+  @media (max-width: 768px) {
+    .cart-page {
+      flex-direction: column;
+    }
+  
+    .order-summary {
+      width: auto;
+      margin-left: 0;
+    }
+  }
+  

@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* body {
+    overflow-x: hidden;
+}
+
+
+.h-100vh {
+    height: 100vh !important;
+}
+
+.translate-r-20 {
+    transform: translateX(20px);
+}
+
+.translate-l-20 {
+    transform: translateX(-20px);
+}
+
+.shift-r-16 {
+    position: relative;
+    left: 16px;
+}
+
+.shift-r-30 {
+    position: relative;
+    left: 30px;
+}
+
+.shift-r-60 {
+    position: relative;
+    left: 60px;
+}
+
+.shift-l-20 {
+    position: relative;
+    right: 20px;
+} */
+

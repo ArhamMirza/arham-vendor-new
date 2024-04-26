@@ -1,0 +1,97 @@
+/* Header */
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0 20px 0;
+  height: 12vh;
+  background-color: white !important;
+}
+
+.logo {
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 49px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #1a788c;
+}
+
+.search-bar {
+  background-color: #1a788c;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.search-icon {
+  color: white;
+}
+
+.search-input {
+    background-color: rgba(0, 0, 0, 0); 
+    border: none;
+    width: 90%;
+    margin-left: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+.search-input:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.navigate-boxes {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navigate-box {
+  background-color: #1a788c;
+  border-radius: 13px;
+  border: 1px solid #0e4956;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 12%;
+}
+
+.navigate-icon {
+  font-size: 22px;
+  color: white;
+}
+
+/* Main Image */
+
+#sse-img {
+    height: 76vh;
+    width: 100vw;
+}
+
+/* Category Bar */
+
+.category-bar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 12vh;
+}
+
+.category-box {
+  font-family: Montserrat;
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: white;
+
+  background-color: #1a788c;
+  padding: 12px;
+  border-radius: 20px;
+  width: 7vw;
+}
