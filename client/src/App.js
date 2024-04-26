@@ -44,7 +44,7 @@ function App() {
 
 
         {/* <Route path="/profile" element={<Profile />} /> */}
-        <Route path="/vendorHome" element={<VendorHome />} />
+        <Route path="https://arham-vendor-new.vercel.app/vendorHome" element={<VendorHome />} />
         <Route path="/vendorAddProduct" element={<VendorAddProduct />} />
         <Route path="/vendorAddAdvertisement" element={<VendorAddAdvertisement />} />
 
